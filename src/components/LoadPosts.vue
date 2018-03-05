@@ -1,9 +1,9 @@
 <template>
   <div>
     <section v-if="posts && posts.length">
-      <div v-for="post of posts" :key="post">
+      <div v-for="post of posts" :key="post.id">
         <article>
-          <h1 :key="post.title">
+          <h1>
             <a :href="post.link" target="_blank">{{post.title.rendered}}</a>
           </h1>
           <div v-html="post.excerpt.rendered"></div>
@@ -40,15 +40,6 @@ export default {
       .catch(e => {
         this.errors.push(e)
       })
-
-    // async / await version (created() becomes async created())
-    //
-    // try {
-    //   const response = await axios.get(`http://jsonplaceholder.typicode.com/posts`)
-    //   this.posts = response.data
-    // } catch (e) {
-    //   this.errors.push(e)
-    // }
   }
 }
 </script>
