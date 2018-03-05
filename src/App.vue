@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <a href="/#/">
+      <img src="./assets/logo.png">
+    </a>
     <nav class="main-nav">
       <ul class="nav-links">
         <li class="nav-links__item"><a class="item__link" href="/#/posts">Posts</a></li>

@@ -3,9 +3,7 @@
     <section v-if="posts && posts.length">
       <div v-for="post of posts" :key="post.id">
         <article>
-          <h1>
-            <a :href="post.link" target="_blank">{{post.title.rendered}}</a>
-          </h1>
+          <h1><a :href="post.link" target="_blank">{{post.title.rendered}}</a></h1>
           <div v-html="post.excerpt.rendered"></div>
         </article>
       </div>
