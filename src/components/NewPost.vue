@@ -33,7 +33,7 @@ export default {
       },
       {
         headers: {
-          Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL3dwY29tcFwvd3AiLCJpYXQiOjE1MjAxMTYyNDAsIm5iZiI6MTUyMDExNjI0MCwiZXhwIjoxNTIwNzIxMDQwLCJkYXRhIjp7InVzZXIiOnsiaWQiOiIxIn19fQ.l5Wt5WQ0-q2IjRi8XM2V7On3BhsCetofEEsmv-hr2NU'
+          Authorization: 'Bearer replace-with-token'
         }
       })
         .then(response => {})
