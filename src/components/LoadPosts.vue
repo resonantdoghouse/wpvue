@@ -2,9 +2,10 @@
   <div>
     <section v-if="posts && posts.length">
       <div v-for="post of posts" :key="post.id">
-        <article>
+        <article class="post-article">
           <h1><a :href="post.link" target="_blank">{{post.title.rendered}}</a></h1>
           <div v-html="post.excerpt.rendered"></div>
+          <a :href="post.link" target="_blank">Read More</a>
         </article>
       </div>
     </section>
@@ -61,6 +62,12 @@ export default {
 
   a {
     color: #42b983;
+  }
+
+  .post-article {
+    border: 1px dashed #eee;
+    padding: .5rem;
+    margin: 0;
   }
 
 </style>

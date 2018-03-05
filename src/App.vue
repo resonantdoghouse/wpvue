@@ -26,7 +26,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
+}
+
+.wp-vue {
+  max-width: 600px;
+  margin: auto;
 }
 
 .main-nav {
@@ -36,13 +41,21 @@ export default {
   list-style: none;
   background: #35485E;
   display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 .nav-links__item {
   color: white;
-  padding: 1rem;
 }
 .item__link {
   color: white;
   text-decoration: none;
+  background: #35485E;
+  padding: 1rem;
+  display: block;
+}
+.item__link:hover {
+  background: #4c6e8e;
 }
 </style>
